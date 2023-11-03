@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2023-224 Research Website</title>
+        <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/milestonestyle.css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/all.css">
+        <!-- ------------ AOS Library ------------------------- -->
+        <link rel="stylesheet" href="css/aos.css">
+        <!-- Custom Style   -->
+        <link rel="stylesheet" href="css/navfooter.css">
+       
+        
+
+    </head>
+    <body>
+  <!-- ----------------------------  navigation ---------------------------------------------- -->
+
+  <nav class="navbar">
+    <div class="navbar-menu flex-row">
+        <div class="navbar-brand">
+            <a href="#" class="text-gray">CrimeShield</a>
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div>
+            <ul class="navbar-items">
+                <li class="navbar-link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="navbar-link">
+                    <a href="ProjectScope.html">Project Scope</a>
+                </li>
+                <li class="navbar-link">
+                    <a href="#" style="font-weight: bold;color: #0074d9;">Project Milestones</a>
+                </li>
+                <li class="navbar-link">
+                    <a href="Documents.html">Documents</a>
+                </li>
+                <li class="navbar-link">
+                    <a href="Presentations.html">Presentations</a>
+                </li>
+                <li class="navbar-link">
+                    <a href="AboutUs.html">About Us</a>
+                </li>
+                <!-- <li class="navbar-link">
+                    <a href="ContactUs.html">Contact Us</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+        <div class="social text-gray">
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+ </nav>
+ 
+ <!-- ------------x---------------  navigation --------------------------x------------------- -->
+        <div class="main">
+            <h3 class="head">Research Project Milestone</h3>
+            <div class="mscontainer">
+                <ul>
+                    <li>
+                        <h3 class="heading">Project proposal report (draft)</h3>
+                        <p>Group and Individual</p>
+                        <span class="date">24th March 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Project proposal presentation</h3>
+                        <p>Individual </p>
+                        <span class="date">27th-31st March- 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Progress Presentation – I (50%)</h3>
+                        <p>Individual</p>
+                        <span class="date">22nd-26th May 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Project Status document – I</h3>
+                        <p>Individual</p>
+                        <span class="date">22nd May 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Research Paper Submission</h3>
+                        <p>Group</p>
+                        <span class="date">20th June 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Progress Presentation-II (90%)</h3>
+                        <p>Individual</p>
+                        <span class="date">4th-6th Septemeber 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Project Status document – II</h3>
+                        <p>Individual</p>
+                        <span class="date">4th-6th Septemeber 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Final Report(Draft)</h3>
+                        <p>Group and Individual</p>
+                        <span class="date">10th Septemeber 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Research logbook</h3>
+                        <p>Individual</p>
+                        <span class="date">30th October 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Final Presentation and Viva</h3>
+                        <p>Individual</p>
+                        <span class="date">30th Oct-3rd Nov 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Project Website</h3>
+                        <p>Group</p>
+                        <span class="date">6th November 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
+    <select>
+        <option>Choose Project Assessment</option>
+        <option value="proposal">Project Proposal</option>
+        <option value="presentation1">Progress Presentation 1</option>
+        <option value="presentation2">Progress Presentation 2</option>
+        <option value="finalasses">Final Presentation and Viva</option>
+    </select>
+</div>
+
+    
+    <div class="center">
+    <div class="proposal box"><div class="card">
+        <img src="assets/images/proposal.png" alt="Proposal" style="width:80%">
+        <h1>Project Proposal</h1>
+        <p class="price">Date - 27th-31st March- 2023 </p>
+        <p>Individual Assesment</p>
+        <p>A project proposal serves as a fundamental document that aims to persuade potential sponsors and stakeholders to support a project. This document outlines the problem that needs to be addressed and outlines the advantages that will result from its implementation. Typically, a project proposal serves as the initial blueprint for introducing the project concept and encompasses the project's goals, objectives, and the strategies for achieving them. It is common for a project proposal to include a roster of tasks or activities associated with the project, demonstrate the importance of the project idea, and provide insights into its origins. Developing a proposal enables an organization to present a structured and rational case to external collaborators or project funders. Generally, proposals are crafted during the early stages of a project, before detailed plans are developed and resources are allocated.</p>
+        <p>Proposal Presentation - Marks Allocation - 6%</p>
+        <p>Proposal Report - Marks Allocation - 6%</p>
+      </div></div>
+    <div class="presentation1 box"><div class="card">
+        <img src="assets/images/50 progress.png" alt="50-Progress" style="width:80%">
+        <h1>Progress presentation-1</h1>
+        <p class="price">Date - 22nd-26th May 2023</p>
+        <p>Individual Assesment</p>
+        <p>A successful presentation goes beyond simply sharing information by speaking or showing slides. It requires careful consideration of how to effectively convey the information to the audience. When delivering an oral presentation, it's not about merely reciting a paper or a series of slides. The way you present your material is equally, if not more, important for effectively getting your message across compared to the content itself.</p>
+        <p>Marks Allocation - 15%</p>
+      </div></div>
+    <div class="presentation2 box"><div class="card">
+        <img src="assets/images/90 progress.png" alt="90-Progress" style="width:80%">
+        <h1>Progress presentation-2</h1>
+        <p class="price">Date - 4th-6th Septemeber 2023</p>
+        <p>Individual Assesment</p>
+        <p>A successful presentation goes beyond simply sharing information by speaking or showing slides. It requires careful consideration of how to effectively convey the information to the audience. When delivering an oral presentation, it's not about merely reciting a paper or a series of slides. The way you present your material is equally, if not more, important for effectively getting your message across compared to the content itself.</p>
+        <p>Marks Allocation - 18%</p>
+      </div></div>
+    <div class="finalasses box"><div class="card">
+        <img src="assets/images/final asses.png" alt="Final Assesment" style="width:80%">
+        <h1>Final Presentation and Viva</h1>
+        <p class="price">Date - 30th Oct-3rd Nov 2023</p>
+        <p>Individual Assesment</p>
+        <p>A successful presentation involves more than simply relaying information while standing before an audience. It requires careful thought on how to convey that information effectively to the listeners. When it comes to oral presentations, it's not just about reciting a written document or going through a set of slides. The way you deliver your presentation is equally crucial in conveying your message effectively, and it complements the content you share.</p>
+        <p>Marks Allocation - 20%</p>
+      </div></div>
+    </div>
+
+<!-- --------------------------- Footer ---------------------------------------- -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2>Informations</h2>
+                <p>Address - SLIIT Malabe Campus<br>New Kandy Road<br>Malabe<br>10115</p>
+                <p>Contact - 0772809924<br>0772841337</p>
+                <p>Email - dharsanravichandran1@gmail.com</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+            <div class="footer_links">
+               <h2>Quick Links</h2>
+               <ul>
+                <li><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Home</a></li>
+                <li><a href="ProjectScope.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Project Scope</a></li>
+                <li><a href="ProjectMilestones.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Milestones</a></li>
+                <li><a href="Presentations.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Presentations</a></li>
+                <li><a href="Documents.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Documents</a></li>
+                <li><a href="AboutUs.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Team</a></li>
+             </ul>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-6">
+            <div class="footer_links">
+               <h2>FAQ</h2>
+               <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Machine_learning"><i class="fa fa-angle-right" aria-hidden="true"></i> What is Machine Learning?</a></li>
+                <li><a href="https://www.investopedia.com/terms/a/autoregressive-integrated-moving-average-arima.asp"><i class="fa fa-angle-right" aria-hidden="true"></i> What is ARIMA model</a></li>
+                <li><a href="https://monkeylearn.com/text-classification/"><i class="fa fa-angle-right" aria-hidden="true"></i> What is Text Classification</a></li>
+                <li><a href="https://developers.google.com/machine-learning/clustering/overview"><i class="fa fa-angle-right" aria-hidden="true"></i> What is Clustering</a></li>
+               </ul>
+            </div>
+         </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+            <h2>Follow Us</h2>
+            <p>Let us be Social</p>
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="rights flex-row">
+        <h4 class="text-gray">
+            Copyright ©2023 All rights reserved | made by <a href="https://www.sliit.lk/">CDAP 2023-044</a>
+            </a>
+        </h4>
+    </div>
+   
+  </footer>
+  
+  <!-- -------------x------------- Footer --------------------x------------------- -->
+  
+  <!-- Jquery Library file -->
+  <script src="js/Jquery3.4.1.min.js"></script>
+  
+  <!-- --------- Owl-Carousel js ------------------->
+  <script src="js/owl.carousel.min.js"></script>
+  
+  <!-- ------------ AOS js Library  ------------------------- -->
+  <script src="js/aos.js"></script>
+  
+  <!-- Custom Javascript file -->
+  <script src="js/main.js"></script>
+  </body>
+  
+  </html>
